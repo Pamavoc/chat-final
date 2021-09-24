@@ -1,0 +1,213 @@
+
+$typocolor: #222221;
+
+
+input {
+    all: unset;
+}
+
+
+.ui {
+    position: fixed;
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+   
+
+    .splashPage {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    
+
+    .background {
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+        opacity: 0.4;
+        background: url('/static/img/home.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .motifs {
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background: url('/static/img/home-motifs.svg');
+        background-size: 100% auto;
+        background-repeat: repeat;
+    }
+
+    .usernameWrapperSplash {
+        position: fixed;
+        top:50%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+       
+
+        @media (min-width: 1500px) {
+            top:60%;
+        }
+    }
+
+    .usernameBase {
+        position: relative;
+        opacity: 0.7;
+        border: 0.28px solid #A6A6A6;
+       
+        width: 50vw;
+    }
+
+    .top-left {
+        transform: rotate(
+            270deg);
+        position: absolute;
+        top: -55px;
+        left: 4px;
+    }
+
+    .bottom-right {
+        position: absolute;
+        transform: rotate(90deg);
+        bottom: -55px;
+        right: 4px;
+    }
+
+    .send-user {
+        position: absolute;
+        right: 45px;
+        top: 80px;
+        background: #FFFFFF;
+        opacity: 1;
+        font-weight: 250;
+        border: 0.28px solid #A6A6A6;
+        padding: 12px 60px;
+        border-radius: 36px;
+        transition: all 0.5s;
+        cursor: pointer;
+        text-transform: lowercase;
+
+        &:hover {
+            background: #222221;
+            color: white;
+        }
+    }
+
+
+    .usernameWrapper {
+        position: relative;
+        height: 100%;
+        padding: 12px 24px;
+        background: #FFFFFF;
+        opacity: 0.7;
+        border-bottom-left-radius: 36px;
+        border-top-right-radius: 36px;
+        border: 0.28px solid #A6A6A6;
+
+        .corner-right {
+            position: absolute;
+        }
+    }
+
+    .username {
+        font-weight: 250;
+        color: #222221;
+
+        width: 100%;
+    }
+
+    
+   
+    
+    
+
+
+    
+
+   
+}
+
+
+.starElement {
+        
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+    top: 0;
+    display: flex;
+    align-items: center;
+    // transform-origin: center;
+    // transform: scale(80.5);
+    // background: black;
+
+    clip-path: url(#my-clip-path);
+    
+  
+    // background: #222221;
+
+    pointer-events: none;
+
+    // background-color: #222221;
+   
+}
+
+
+#my-clip-path  {
+    
+    transform: scale(100);
+    width: 100%;
+    width: -moz-available;          
+    width: -webkit-fill-available;  
+    width: fill-available;
+
+}
+
+
+
+.list-user-close {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 35px;
+    left: 233px;
+    background: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+
+.list-user {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 4vh;
+    left: 4.5vh;
+    background: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+
+
+
+
+// .clip {
+//     height: 100vh;
+//     width: 100vw;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background: transparent;
+
+// }
+
+// svg {
+//     clip-path: url(#my-clip-path);
+// }

@@ -1,0 +1,235 @@
+.message-el {
+  
+}
+
+
+
+
+
+.listUsers  {
+    overflow-y: scroll;
+    right: 1.5vh;
+    max-height: 97vh;
+    position: fixed;
+    left: 1.5vh;
+    z-index: 2;
+    // display: none;
+    top: 1.5vh;
+    bottom: 1.5vh;
+    padding: 20.67px;  
+    visibility: hidden;
+    opacity: 0;
+
+    
+}
+
+
+.personnal-message {
+    margin-left: 75%;
+
+
+}
+
+.send-message {
+    font-weight: 250;
+    position: absolute;
+    right: 48px;
+    top: 55px;
+    padding-left: 2rem;
+    border: 0.28px solid #A6A6A6;
+    padding: 5px 40px;
+    border-radius: 36px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-transform: lowercase;
+
+        &:hover {
+            background: #222221;
+            color: white;
+        }
+    
+}
+
+
+.messagesZone {
+    
+    overflow-y: scroll;
+    right: 1.5vh;
+    max-height: 97vh;
+    position: fixed;
+    right: 1.5vh;
+    z-index: 2;
+    // display: none;
+    top: 1.5vh;
+    bottom: 1.5vh;
+    padding: 20.67px;  
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.message-el {
+    position: relative;
+    opacity: 1;
+    max-width: 50%;
+    margin-bottom: 36px;
+
+    .message-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        align-items: center;
+        max-width: 100%;
+
+        .author {
+            font-weight: 400;
+            font-size: 16px;
+            max-width: 120px;
+            overflow: hidden;
+            text-overflow: clip;
+            overflow-wrap: normal;
+        }
+
+        .time {
+            font-weight: 275;
+            font-size: 12px;
+            margin-top: 1px;
+            margin-right: 32px;
+            display: flex;
+        }
+    }
+    
+
+    .message-content-left {
+        font-weight: 250;
+        position: relative;
+        background: rgba($color: #FFFFFF, $alpha: 0.7);
+        opacity:  1;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 36px;
+   
+        border: 1px solid #A6A6A6;
+        font-family: Helvetica Neue LT Pro;
+        font-style: normal;
+        font-weight: 250;
+        word-break: break-word;
+
+        max-width: fit-content;
+        
+        padding: 19px 24px; 
+
+        .corner-left {
+            position: absolute;
+            left: -1.28px;
+            top: -0.8px;
+        }
+
+        .star-left {
+            position: absolute;
+            
+            bottom: -31px;
+            right: -19.5px;
+        }
+
+    }
+
+    .message-content-right {
+        position: relative;
+        background: rgba($color: #FFFFFF, $alpha: 0.7);
+        opacity: 1;
+        font-weight: 250;
+        max-width: fit-content;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 36px;
+        // border: 0.15px solid #222221;
+        border: 1px solid #A6A6A6;
+        font-family: Helvetica Neue LT Pro;
+        font-style: normal;
+        font-weight: 250;
+
+        word-break: break-word;
+
+        padding: 19px 24px; 
+
+        .star-right {
+            position: absolute;
+            bottom: -31px;
+            left: -19.5px;
+        }
+
+        .corner-right {
+            position: absolute;
+            right: -0.28px;
+            top: -0.58px;
+        }
+
+    }
+
+   
+
+}
+
+
+.usernameModifier {
+    position: fixed;
+    z-index: 5;
+    
+
+    .username-change {
+        padding-left: 1.5rem;
+        margin-top: -1.5rem;
+        padding-bottom: 0.5rem;
+        position: absolute;
+        top: 47px;
+        font-size: 14px;
+        font-weight: 250;
+    }
+
+    .top {
+        margin-top: 0px;
+    }
+
+
+    .bottom {
+        // position: absolute;
+        margin-top: -27px;
+        font-size: 13px;
+    }
+}
+
+.username-change, .modifier {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.writeMessage {
+    position: fixed;
+    z-index: 5;
+    // background: rgba($color: #FFFFFF, $alpha: 0.7);
+    min-width: 500px;
+    bottom: 0;
+
+    .top {
+        margin-bottom: -25px;
+    }
+
+
+    .bottom {
+        // position: absolute;
+        margin-bottom: 9px;
+        font-size: 13px;
+    }
+
+    input {
+        width: 80%;
+        position: absolute;
+        padding-left: 1.5rem;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        font-weight: 250;
+        left: 0rem;
+        top: 1.5rem;
+        font-size: 14px;
+    }
+}
